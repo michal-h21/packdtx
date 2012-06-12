@@ -35,13 +35,27 @@ end
 
 
 dtx=loadConf()
+if dtx ==nil then
+  print "No .packdtx or packdtx.conf found"
+  return
+end
+dtx.date=dtx.date or os.date('%Y/%m/%d')
 --local tplFile=kpse.find_file("dtx-template.tex","lua")
-tplFile=string.gsub(arg[0],"packdtx.lua","dtx.tpl")
+local tplFile=string.gsub(arg[0],"packdtx.lua","dtx.tpl")
+local insFile=string.gsub(arg[0],"packdtx.lua","ins.tpl")
 local template= io.open(tplFile)
+local ins=io.open(insFile)
+
 if template then
   --print("Loading template")
-  l=prep(template)
+  local out = io.output(dtx.package..".dtx") 
+  if out then
+    prep(template)
+  else
+    print("Cannot open output file "..dtx.package..".dtx")
+  end
+  io.output(dtx.package..".ins")
+  prep(ins) 
 else
   print("Template not found")
 end
-
