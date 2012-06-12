@@ -6,7 +6,7 @@ packages in this format from ordinary `sty` packages and `tex` documentation fil
 
 ## Usage
 
-In directory with your source codes, create file named `.packdtx` or \packdtx.conf`. This file uses simple format to store package configuration. 
+In directory with your source codes, create file named `.packdtx` or `packdtx.conf`. This file uses simple format to store package configuration. 
 
 Example:
 
