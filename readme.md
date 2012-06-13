@@ -39,8 +39,14 @@ Simple strings are surrounded with double quotes, multiline strings with `[[ ...
 ### Variables
 - *author*
 - *package*
-
-    Package name. This will be used for filenames of the `dtx` and `ins` files
+    This will be used for filenames of the `dtx` and `ins` files.
+- *email*
+- *name*
+    This is human readable package name
+- *version*
+- *description*
+- *preamble*
+    
 
 
 ## Notes
