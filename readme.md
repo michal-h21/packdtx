@@ -37,6 +37,10 @@ Run `packdtx` script. Files `<package>.dtx` and `<package>.ins` will be created.
 Simple strings are surrounded with double quotes, multiline strings with `[[ ... ]]` and arrays with `{ ... }`
 
 ### Variables
+- *author*
+- *package*
+
+    Package name. This will be used for filenames of the `dtx` and `ins` files
 
 
 ## Notes
