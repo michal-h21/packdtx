@@ -12,7 +12,7 @@ Just put the files somewhere and create script which will call and pass paramete
 
 In directory with your source codes, create file named `.packdtx` or `packdtx.conf`. This file uses simple format to store package configuration. 
 
-Example[1][fn1]:
+Example[[1]][fn1]:
 
 ```lua
 author="Michal Hoftich",
@@ -35,6 +35,6 @@ Run `packdtx` script. Files `<package>.dtx` and `<package>.ins` will be created.
 ## Variables
 
 ## Notes
-[fn1]: https://github.com/michal-h21/packdtx "[1]"
-This example is configuration for [LaTexunit`(https://github.com/michal-h21/latexunit) unit test framework
+[fn1]: https://github.com/michal-h21/packdtx ""
+[1] This example is configuration for [LaTexunit](https://github.com/michal-h21/latexunit) unit test framework
 
