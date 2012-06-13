@@ -35,6 +35,6 @@ Run `packdtx` script. Files `<package>.dtx` and `<package>.ins` will be created.
 ## Variables
 
 ## Notes
-[fn1]: https://github.com/michal-h21/packdtx ""
-[1] This example is configuration for [LaTexunit](https://github.com/michal-h21/latexunit) unit test framework
+[fn1]: https://github.com/michal-h21/packdtx "[1]"
+ [1] This example is configuration for [LaTexunit](https://github.com/michal-h21/latexunit) unit test framework
 
