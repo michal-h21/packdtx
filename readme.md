@@ -10,7 +10,7 @@ Just put the files somewhere and create script which will call and pass paramete
 
 ## Usage
 
-In directory with your source codes, create file named `.packdtx` or `packdtx.conf`. This file uses simple format to store package configuration. 
+In directory with your source codes, create file named `.packdtx` or `packdtx.conf`. This file uses lua table format to store package configuration. For more info see
 
 Example[[1]](#fn1):
 
@@ -32,7 +32,12 @@ packages={
 
 Run `packdtx` script. Files `<package>.dtx` and `<package>.ins` will be created.
 
-## Variables
+## Config file format
+
+Simple strings are surrounded with double quotes, multiline strings with `[[ ... ]]` and arrays with `{ ... }`
+
+### Variables
+
 
 ## Notes
 <span id="fn1">[1]</span>
