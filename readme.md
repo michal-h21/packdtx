@@ -50,6 +50,23 @@ Simple strings are surrounded with double quotes, multiline strings with `[[ ...
 - *documentation* array of documentation files
 - *packages* dictionary of `sty` files, key should be package identifier, value filename
 
+## Needed modifications to source files
+
+### Documentation files
+
+There should be just text, not document preamble, which is set in the `dtx` template. If you want to include some packages or do other stuff that should ho into the preamble, put it into the `.packdtx` config file under `preamble` key.
+
+### Package files
+
+Best is to use `macro` and `macrocode` environments, their functionality is described in the [dtxtut](http://www.tex.ac.uk/tex-archive/info/dtxtut/dtxtut.pdf). If you don`t want to describe the macros and just include package source code into the source code listings, just surround whole code with
+
+```tex
+%    \begin{macrocode}
+....
+package code
+....
+%    \end{macrocode}
+```
 
 ## Notes
 <span id="fn1">[1]</span>
