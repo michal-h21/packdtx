@@ -46,7 +46,9 @@ Simple strings are surrounded with double quotes, multiline strings with `[[ ...
 - *version*
 - *description*
 - *preamble*
-    
+    There you can specify anythink that should go into preamble - loading packages, etc.
+- *documentation* array of documentation files
+- *packages* dictionary of `sty` files, key should be package identifier, value filename
 
 
 ## Notes
